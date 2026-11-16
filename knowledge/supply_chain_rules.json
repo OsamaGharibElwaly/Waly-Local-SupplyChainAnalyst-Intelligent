@@ -1,0 +1,18 @@
+{
+  "rules": [
+    {"id": "R1", "if": "days_of_stock < 15", "then": "REORDER", "weight": 0.9},
+    {"id": "R2", "if": "lead_time_days > 30", "then": "HIGH_LEAD_TIME", "weight": 0.7},
+    {"id": "R3", "if": "defect_rate > 0.03", "then": "QUALITY_ISSUE", "weight": 0.85},
+    {"id": "R4", "if": "supplier_score < 60", "then": "SUPPLIER_RISK", "weight": 0.8},
+    {"id": "R5", "if": "abs(zscore_cost) > 2.5", "then": "COST_ANOMALY", "weight": 0.75},
+    {"id": "R6", "if": "sentiment < -0.15", "then": "NEGATIVE_SENTIMENT", "weight": 0.65},
+    {"id": "R7", "if": "stock_turnover < 2", "then": "SLOW_MOVING", "weight": 0.6},
+    {"id": "R8", "if": "on_time_delivery < 0.9", "then": "DELIVERY_RISK", "weight": 0.7}
+  ],
+  "domain_knowledge": {
+    "safety_stock_formula": "safety_stock = z * std_demand * sqrt(lead_time)",
+    "eoq_formula": "EOQ = sqrt(2*D*S/H)",
+    "reorder_point": "ROP = avg_daily_demand * lead_time + safety_stock",
+    "abc_classification": "A: top 80% value, B: next 15%, C: remaining 5%"
+  }
+}

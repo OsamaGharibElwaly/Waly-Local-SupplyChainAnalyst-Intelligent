@@ -1,0 +1,62 @@
+﻿# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+env/
+ENV/
+.conda/
+.python-version
+
+# ---------- PyQt / matplotlib cache ----------
+*.spec
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.matplotlib/
+*.pyo
+
+# ---------- Generated reports (keep folder, ignore contents) ----------
+reports/*
+!reports/.gitkeep
+
+# ---------- IDE / editors ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Logs ----------
+*.log
+logs/
+
+# ---------- Local data (keep sample.csv, ignore other CSVs the user imports) ----------
+data/*.csv
+!data/sample.csv
+
+# ---------- Secrets / env ----------
+.env
+.env.*
+secrets.json
+
+# ---------- Build artifacts ----------
+*.exe
+*.dll
+*.manifest

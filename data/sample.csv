@@ -1,0 +1,13 @@
+﻿date,sku,supplier,quantity,stock,lead_time_days,defect_rate,supplier_score,on_time_delivery,cost,review
+2024-01-01,SKU-001,Acme Corp,120,10,25,0.01,85,0.95,12.50,Great delivery fast service
+2024-01-02,SKU-002,Beta Inc,80,45,32,0.05,55,0.82,18.20,Items arrived late and damaged
+2024-01-03,SKU-003,Acme Corp,150,8,20,0.02,90,0.98,10.00,Excellent quality very reliable
+2024-01-04,SKU-004,Gamma Ltd,60,120,45,0.08,45,0.75,25.00,Very poor quality defective
+2024-01-05,SKU-001,Acme Corp,130,12,25,0.01,85,0.95,12.50,Prompt and good
+2024-01-06,SKU-005,Delta Co,200,5,15,0.03,70,0.90,8.75,Satisfied with the order
+2024-01-07,SKU-002,Beta Inc,90,38,32,0.05,55,0.82,18.20,Broken packaging problem
+2024-01-08,SKU-006,Gamma Ltd,40,200,50,0.10,40,0.70,30.00,Slow delivery missing items
+2024-01-09,SKU-003,Acme Corp,160,7,20,0.02,90,0.98,10.00,Amazing reliable partner
+2024-01-10,SKU-007,Epsilon,75,55,28,0.02,78,0.92,14.00,Good reliable service
+2024-01-11,SKU-001,Acme Corp,125,11,25,0.01,85,0.95,12.50,Happy with order
+2024-01-12,SKU-004,Gamma Ltd,55,110,45,0.08,45,0.75,25.00,Terrible defective refund please
